@@ -22,10 +22,10 @@ function App() {
     fetch('https://fakestoreapi.com/products')
       .then(respuesta => respuesta.json())
       .then(datos => {
-        setTimeout(()=>{
-            setProductos(datos)
-            setCargando(false)
-        }, 2000)
+          setTimeout(()=>{
+              setProductos(datos)
+              setCargando(false)
+            }, 2000)
       })
       .catch(error=>{
         console.log('Error:', error)
@@ -39,7 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acercade" element={<AcercaDe />} />
-        <Route path="/productos" element={<GaleriaDeProductos />} />
+        <Route path="/productos" element={<GaleriaDeProductos productos={productos} cargando={cargando}/>} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

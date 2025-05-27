@@ -1,12 +1,24 @@
-import React from 'react'
+import React from "react";
+import Productos from "./Productos";
+import './estaticos/styleProducto.css'
 
-const ProductList = () => {
+const ProductList = ({ productos }) => {
+
+  if (!Array.isArray(productos)) {
+    return <p>No hay productos para mostrar.</p>;
+  }
+
   return (
     <>
-      <h2>Galeria de Productos</h2>
-       
+      <h2>Lista de Productos</h2>
+      <div className="tarjeta">
+        {productos.map(producto => (
+            <Productos key={producto.id} producto={producto} />
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;
+
