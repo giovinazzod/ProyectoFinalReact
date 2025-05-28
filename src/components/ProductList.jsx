@@ -1,8 +1,8 @@
 import React from "react";
 import Productos from "./Productos";
-import './estaticos/styleProducto.css'
+import './styleProducto.css'
 
-const ProductList = ({ productos }) => {
+const ProductList = ({ productos, agregarCarrito }) => {
 
   if (!Array.isArray(productos)) {
     return <p>No hay productos para mostrar.</p>;
@@ -10,10 +10,9 @@ const ProductList = ({ productos }) => {
 
   return (
     <>
-      <h2>Lista de Productos</h2>
       <div className="tarjeta">
         {productos.map(producto => (
-            <Productos key={producto.id} producto={producto} />
+            <Productos key={producto.id} producto={producto} agregarCarrito={agregarCarrito} />
         ))}
       </div>
     </>

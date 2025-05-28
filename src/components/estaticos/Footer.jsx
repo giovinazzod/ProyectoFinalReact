@@ -55,7 +55,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <p>&copy; 2025 - DMG</p>
+      <p className="firma">&copy; 2025 - DMG</p>
     </footer>
   );
 }
