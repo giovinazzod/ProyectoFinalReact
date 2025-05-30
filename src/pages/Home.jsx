@@ -9,10 +9,9 @@ const Home = ({ cart }) => {
       <main>
         <h1>Bienvenidos!</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          reprehenderit molestias adipisci ullam doloremque nobis odio atque
-          aspernatur. Dolore, fugit voluptates! Autem eaque repellendus repellat
-          necessitatibus, facilis illum modi laudantium.
+          Esta pagina no tiene mucho sentido. 
+          <br/>
+          Evaluar quitarla y dejar como inicio a la GaleriaDeProductos.
         </p>
       </main>
       <Footer />

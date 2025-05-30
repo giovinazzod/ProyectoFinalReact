@@ -1,0 +1,70 @@
+@import "./colors.css";
+
+.contacto-container {
+  width: 75%;
+  max-width: 900px; /* opcional, para no excederse en pantallas grandes */
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-container h2 {
+  text-align: center;
+  color: var(--color1);
+  margin-bottom: 24px;
+}
+
+.formulario-contacto .campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.campo input,
+.campo textarea {
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 6px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+}
+
+.campo.textarea {
+  align-items: flex-start;
+}
+
+.textarea textarea {
+  resize: vertical;
+  min-height: 60px; /* más corto */
+  max-height: 120px;
+}
+
+.icono {
+  color: var(--color1);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.btn-agregar {
+  width: 100%;
+  background-color: var(--color1);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: var(--color2);
+}
