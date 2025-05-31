@@ -12,7 +12,7 @@ const Productos = ({ producto, agregarCarrito }) => {
   const handleAgregar = () => {
     if (cantidad > 0) {
       agregarCarrito(producto, cantidad);
-      setCantidad(0); // opcional: resetear a 0 después de agregar
+      //setCantidad(0);
     }
   };
 

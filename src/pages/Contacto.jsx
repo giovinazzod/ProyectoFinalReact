@@ -23,7 +23,6 @@ const Contacto = ({cart}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Podés validar campos antes si querés
     Swal.fire({
       icon: "success",
       title: "¡Mensaje enviado!",

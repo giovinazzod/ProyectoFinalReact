@@ -7,11 +7,9 @@ const Home = ({ cart }) => {
     <>
       <Header cart={cart} />
       <main>
-        <h1>Bienvenidos!</h1>
+        <h1>¡Bienvenidos!</h1>
         <p>
-          Esta pagina no tiene mucho sentido. 
-          <br/>
-          Evaluar quitarla y dejar como inicio a la GaleriaDeProductos.
+          Evaluar quitar esta pagina y dejar como inicio a la GaleriaDeProductos.
         </p>
       </main>
       <Footer />
