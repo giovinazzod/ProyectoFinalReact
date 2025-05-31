@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import '../../styles/style.css';
+import '../../styles/styleEstaticos.css';
 import { Link } from "react-router-dom";
 import Cart from '../Cart'
 function Header({cart}) {

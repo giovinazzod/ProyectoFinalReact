@@ -2,25 +2,26 @@
 
 .contacto-container {
   width: 75%;
-  max-width: 900px; /* opcional, para no excederse en pantallas grandes */
+  max-width: 900px;
   margin: 40px auto;
   padding: 24px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--color2);
 }
 
 .contacto-container h2 {
   text-align: center;
   color: var(--color1);
   margin-bottom: 24px;
+  margin-top: auto;
 }
 
 .formulario-contacto .campo {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  background-color: #f4f4f4;
+  background-color: var(--color5);
   padding: 8px 12px;
   border-radius: 8px;
 }
@@ -33,7 +34,7 @@
   padding: 6px;
   font-size: 16px;
   outline: none;
-  color: #333;
+  color: var(--color1);
 }
 
 .campo.textarea {
@@ -42,7 +43,7 @@
 
 .textarea textarea {
   resize: vertical;
-  min-height: 60px; /* más corto */
+  min-height: 60px;
   max-height: 120px;
 }
 
@@ -52,10 +53,10 @@
   font-size: 18px;
 }
 
-.btn-agregar {
+.btn-enviar {
   width: 100%;
-  background-color: var(--color1);
-  color: white;
+  background-color: var(--color3);
+  color:  var(--color1);
   border: none;
   padding: 10px;
   font-weight: bold;
@@ -65,6 +66,7 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-agregar:hover {
-  background-color: var(--color2);
+.btn-enviar:hover {
+  background-color: var(--color1);
+  color: var(--color3);
 }

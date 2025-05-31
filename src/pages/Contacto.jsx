@@ -7,7 +7,7 @@ import { faUser, faEnvelope, faPhone, faComment } from "@fortawesome/free-solid-
 import Swal from "sweetalert2";
 
 
-const Contacto = () => {
+const Contacto = ({cart}) => {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
@@ -88,7 +88,7 @@ const Contacto = () => {
               required
             />
           </div>
-          <button className="btn-agregar" type="submit">
+          <button className="btn-enviar" type="submit">
             Enviar
           </button>
         </form>

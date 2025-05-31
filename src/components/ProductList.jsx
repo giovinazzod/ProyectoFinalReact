@@ -1,9 +1,8 @@
 import React from "react";
 import Productos from "./Productos";
-import './styleProducto.css'
+import "./styleProducto.css";
 
 const ProductList = ({ productos, agregarCarrito }) => {
-
   if (!Array.isArray(productos)) {
     return <p>No hay productos para mostrar.</p>;
   }
@@ -11,8 +10,12 @@ const ProductList = ({ productos, agregarCarrito }) => {
   return (
     <>
       <div className="tarjeta">
-        {productos.map(producto => (
-            <Productos key={producto.id} producto={producto} agregarCarrito={agregarCarrito} />
+        {productos.map((producto) => (
+          <Productos
+            key={producto.id}
+            producto={producto}
+            agregarCarrito={agregarCarrito}
+          />
         ))}
       </div>
     </>
@@ -20,4 +23,3 @@ const ProductList = ({ productos, agregarCarrito }) => {
 };
 
 export default ProductList;
-

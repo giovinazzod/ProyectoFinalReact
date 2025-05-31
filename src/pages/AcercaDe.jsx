@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "../components/estaticos/Header";
 import Footer from "../components/estaticos/Footer";
-import "../styles/style.css";
+import "../styles/styleAcercaDe.css";
 
 const AcercaDe = ({cart}) => {
   return (
     <div>
       <Header cartItems={cart} />
       <div className="acerca-de">
-        {/* <h1>Acerca de Biskra Home</h1> */}
         <div className="acerca-grid">
           <div className="acerca-card">
             <img src="/src/assets/vela-icon.png" alt="Velas de soja" />
